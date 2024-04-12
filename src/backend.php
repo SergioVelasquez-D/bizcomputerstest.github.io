@@ -1,6 +1,6 @@
 <?php
 // Cargar datos del archivo JSON
-$data = json_decode(file_get_contents('data/data.json'), true);
+$data = json_decode(file_get_contents('src/data/data.json'), true);
 // Definir $searchKeyword y $selectedStars
 $searchKeyword = isset($_GET['search']) ? strtolower($_GET['search']) : '';
 $selectedStars = isset($_GET['stars']) ? $_GET['stars'] : [];

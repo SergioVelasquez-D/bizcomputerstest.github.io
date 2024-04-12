@@ -22,7 +22,7 @@ $(document).ready(function() {
         });
 
         // Filtrar hoteles según los criterios seleccionados
-        $.getJSON('data/data.json', function(data) {
+        $.getJSON('src/data/data.json', function(data) {
             var filteredHotels = data.filter(function(hotel) {
                 var nameMatches = hotel.name.toLowerCase().includes(searchKeyword);
                 var starsMatches = selectedStars.length === 0 || selectedStars.includes(hotel.stars);
@@ -34,14 +34,14 @@ $(document).ready(function() {
             filteredHotels.forEach(function(hotel) {
                 hotelResultsHtml += '<div class="bg-white p-4 shadow-lg border border-gray-300 flex items-center mb-4">';
                 hotelResultsHtml += '<div class="mr-4">';
-                hotelResultsHtml += '<img src="assets/images/hotels/' + hotel.image + '" alt="' + hotel.name + '" class="w-48 h-48 object-cover">';
+                hotelResultsHtml += '<img src="src/assets/images/hotels/' + hotel.image + '" alt="' + hotel.name + '" class="w-48 h-48 object-cover">';
                 hotelResultsHtml += '</div>';
                 hotelResultsHtml += '<div class="flex flex-grow">';
                 hotelResultsHtml += '<div class="flex flex-col">';
                 hotelResultsHtml += '<h3 class="mb-2 text-blue-600 text-2xl">' + hotel.name + '</h3>';
                 hotelResultsHtml += '<div class="flex mb-2">';
                 for (var s = 0; s < hotel.stars; s++) {
-                    hotelResultsHtml += '<img src="assets/icons/filters/staryellow.svg" alt="Star Icon" class="h-4 w-4 mr-1">';
+                    hotelResultsHtml += '<img src="src/assets/icons/filters/staryellow.svg" alt="Star Icon" class="h-4 w-4 mr-1">';
                 }
                 hotelResultsHtml += '</div>';
                 hotelResultsHtml += '<p class="mb-2 text-gray-400">Precio por noche por habitación</p>';
