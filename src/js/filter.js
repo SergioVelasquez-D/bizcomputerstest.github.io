@@ -22,7 +22,7 @@ $(document).ready(function() {
         });
 
         // Filtrar hoteles según los criterios seleccionados
-        $.getJSON('src/data/data.json', function(data) {
+        $.getJSON('https://sergiovelasquez-d.github.io/grupoaviatur.github.io/src/data/data.json', function(data) {
             var filteredHotels = data.filter(function(hotel) {
                 var nameMatches = hotel.name.toLowerCase().includes(searchKeyword);
                 var starsMatches = selectedStars.length === 0 || selectedStars.includes(hotel.stars);
