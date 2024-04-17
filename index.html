@@ -1,200 +1,416 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./output.css" rel="stylesheet" />
-    <title>Aviatur</title>
-  </head>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biz Computers - Tu tienda de tecnologia</title>
+<link rel="shortcut icon" href="./images/IconoBizComputers.png" type="image/x-icon">
+<link rel="stylesheet" href="./css/normalize.css">
+<link rel="stylesheet" href="./css/estilos.css">
 
-  <body class="bg-gray-200">
-    <div class="bg-primary px-4 lg:px-16">
-      <div class="flex p-4">
-        <img
-          src="./src/assets/images/logo-aviatur.svg"
-          alt="logo"
-          class="h-10"
-        />
-      </div>
-    </div>
+<meta name="theme-color" content="#2091F9">
 
-    <!-- Main Content -->
-    <div class="container mx-auto py-4 pl-4 pr-4">
-      <h2 class="text-gray-500 text-lg mb-4">Filtros</h2>
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <!-- Filtros -->
-        <div
-          class="bg-white w-full md:w-auto max-h-72 p-4 shadow-lg border border-gray-300"
-        >
-          <div class="flex items-center">
-            <img
-              src="./src/assets/icons/filters/search.svg"
-              alt="Search Icon"
-              class="h-4 w-4 mr-2 text-gray-500"
-            />
-            <span class="text-gray-800">Nombre del Hotel</span>
-          </div>
-          <hr class="my-2 border-gray-300" />
-          <div class="flex items-center">
-            <img
-              src="./src/assets\icons\amenities\cama.png"
-              alt="Search Icon"
-              class="h-4 w-4 mr-2 text-gray-500"
-            />
-            <input
-              id="searchInput"
-              placeholder="Hotel"
-              type="text"
-              class="sc-dItHI fkTVNF"
-            />
-          </div>
-          <hr class="my-2 border-gray-300" />
-          <div class="flex items-center">
-            <img
-              src="./src/assets/icons/filters/star.svg"
-              alt="Search Icon"
-              class="h-4 w-4 mr-2 text-gray-500"
-            />
-            <span class="text-gray-800">Estrellas</span>
-          </div>
-          <hr class="my-2 border-gray-300" />
-          <div class="flex items-center">
-            <button
-              id="checkAll"
-              class="flex items-center justify-center w-10 h-10 bg-transparent"
-            >
-              <svg
-                class="w-6 h-6 text-blue-500"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M5 13l4 4L19 7"
-                />
-              </svg>
-            </button>
+<!-- Primary Meta Tags -->
+<title>>Biz Computers</title>
+<meta name="title" content=">Biz Computers" />
+<meta name="description" content="Tu tienda de tecnologia" />
 
-            <label for="allStars" class="text-gray-500"
-              >Todas las estrellas</label
-            >
-          </div>
-          <div class="flex items-center ml-3">
-            <input type="checkbox" id="star1" />
-            <div class="flex items-center ml-2">
-              <img
-                src="./src/assets/icons/filters/staryellow.svg"
-                alt="Star Icon"
-                class="h-4 w-4 mr-1"
-              />
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://SergioVelasquez-D.github.io" />
+<meta property="og:title" content="Tu tienda de tecnologia" />
+<meta property="og:description" content="Tu tienda de tecnologia" />
+<meta property="og:image" content="https://SergioVelasquez-D.github.io/images/Icon1.png" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://SergioVelasquez-D.github.io" />
+<meta property="twitter:title" content="Tu tienda de tecnologia" />
+<meta property="twitter:description" content="Tu tienda de tecnologia" />
+<meta property="twitter:image" content="https://SergioVelasquez-D.github.io/images/Icon1.png" />
+
+</head>
+<body>
+<header class = "hero">
+    <nav class="nav container">
+        
+        <div class="nav__logo">
+            <img src="./images/LogoBizComputers.png" alt="" class="logo">        
+        </div>
+
+        <ul class = "nav__link nav__link--menu">
+            
+            <li class="nav__items">
+                <a href="/index.html" class="nav__links">Inicio</a>
+            </li>
+            <li class="nav__items">
+                <a href="pages/productos.html" class="nav__links">Productos</a>
+            </li>
+            <li class="nav__items">
+                <a href="pages/shoppinCart.html" class="nav__links">Carrito de Compras</a>
+            </li>
+            <li class="nav__items">
+                <a href="pages/userDataRegistration.html" class="nav__links">Perfil Usuario</a>
+            </li>
+            <li class="nav__items">
+                <a href="#blogs" class="nav__links">Blog</a>
+            </li>
+            <li class="nav__items">
+                <a href="#aboutUS" class="nav__links">Acerca de Nosotros</a>
+            </li>
+            <li class="nav__items">
+                <a href="#contactUs" class="nav__links">Contacto</a>
+            </li>
+            <img src="./images/close.svg" alt="" class="nav__close">
+
+        </ul>
+        <div class="nav__menu">
+            <img src="./images/menu.svg" alt="" class="nav__img">
+        </div>
+    </nav>
+
+    <section class="hero__container container">
+        <h1 class="hero__title">Biz Computers</h1>
+        <p class="hero__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima repellendus qui, exercitationem repudiandae enim sapientes itaque perspiciatis ducimus, quis voluptas velit. Impedit animi tempora vel aut soluta aliquam, nulla quis!</p>
+        <a href="pages/productos.html" class="cta">Compra ahora</a>
+    </section> 
+</header>
+<main>
+
+    <section class="mainSlider">
+        <div class="container__slider">
+          <div class="slider">
+            <button class="slider__prev">&#60</button>
+            <div class="slider__wrapper">
+              <img src="/images/5.jpg" alt="Imagen 1" class="slider__slide">
+              <img src="/images/2.jpg" alt="Imagen 2" class="slider__slide">
+              <img src="/images/4.jpg" alt="Imagen 3" class="slider__slide">
             </div>
+            <button class="slider__next">&#62</button>
           </div>
-          <div class="flex items-center ml-3">
-            <input type="checkbox" id="star2" />
-            <div class="flex items-center ml-2">
-              <img
-                src="./src/assets/icons/filters/staryellow.svg"
-                alt="Star Icon"
-                class="h-4 w-4 mr-1"
-              />
-              <img
-                src="./src/assets/icons/filters/staryellow.svg"
-                alt="Star Icon"
-                class="h-4 w-4 mr-1"
-              />
-            </div>
-          </div>
-          <div class="flex items-center ml-3">
-            <input type="checkbox" id="star3" />
-            <div class="flex items-center ml-2">
-              <img
-                src="./src/assets/icons/filters/staryellow.svg"
-                alt="Star Icon"
-                class="h-4 w-4 mr-1"
-              />
-              <img
-                src="./src/assets/icons/filters/staryellow.svg"
-                alt="Star Icon"
-                class="h-4 w-4 mr-1"
-              />
-              <img
-                src="./src/assets/icons/filters/staryellow.svg"
-                alt="Star Icon"
-                class="h-4 w-4 mr-1"
-              />
-            </div>
-          </div>
-          <div class="flex items-center ml-3">
-            <input type="checkbox" id="star4" />
-            <div class="flex items-center ml-2">
-              <img
-                src="./src/assets/icons/filters/staryellow.svg"
-                alt="Star Icon"
-                class="h-4 w-4 mr-1"
-              />
-              <img
-                src="./src/assets/icons/filters/staryellow.svg"
-                alt="Star Icon"
-                class="h-4 w-4 mr-1"
-              />
-              <img
-                src="./src/assets/icons/filters/staryellow.svg"
-                alt="Star Icon"
-                class="h-4 w-4 mr-1"
-              />
-              <img
-                src="./src/assets/icons/filters/staryellow.svg"
-                alt="Star Icon"
-                class="h-4 w-4 mr-1"
-              />
-            </div>
-          </div>
-          <div class="flex items-center ml-3">
-            <input type="checkbox" id="star5" />
-            <div class="flex items-center ml-2">
-              <img
-                src="./src/assets/icons/filters/staryellow.svg"
-                alt="Star Icon"
-                class="h-4 w-4 mr-1"
-              />
-              <img
-                src="./src/assets/icons/filters/staryellow.svg"
-                alt="Star Icon"
-                class="h-4 w-4 mr-1"
-              />
-              <img
-                src="./src/assets/icons/filters/staryellow.svg"
-                alt="Star Icon"
-                class="h-4 w-4 mr-1"
-              />
-              <img
-                src="./src/assets/icons/filters/staryellow.svg"
-                alt="Star Icon"
-                class="h-4 w-4 mr-1"
-              />
-              <img
-                src="./src/assets/icons/filters/staryellow.svg"
-                alt="Star Icon"
-                class="h-4 w-4 mr-1"
-              />
+        </div>
+      </section>
+
+      <section class="productos">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+          <div class="producto">
+            <img src="/images/motherboard.jpg" alt="Producto 1" class="producto__imagen">
+            <h3 class="producto__titulo">Producto 1</h3>
+            <p class="producto__descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit felis ut velit ultrices, eget fermentum velit efficitur.</p>
+            <p class="producto__precio">$19.99</p>
+            <div class="botones">
+              <a href="pages/shoppinCart.html" button class="boton boton--carrito">Añadir al carrito</button>
+              <a href="pages/productos.html" class="boton boton--detalles">Detalles</a>
             </div>
           </div>
         </div>
+        
+        
+    </div>
+      
+        </div>
+      </section>
 
-        <!-- Resultados de Hoteles -->
-        <div id="hotelResults" class="md:w-full"></div>
-      </div>
+      <section class="container about">
+        <div class="about__main">
+            <article class="about__icons">
+                <img src="/images/motherboard.jpg" alt="Producto 1" class="producto__imagen">
+            <h3 class="producto__titulo">Producto 1</h3>
+            <p class="producto__descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit felis ut velit ultrices, eget fermentum velit efficitur.</p>
+            <p class="producto__precio">$19.99</p>
+            <div class="botones">
+              <a href="pages/shoppinCart.html" button class="boton boton--carrito">Añadir al carrito</button>
+              <a href="pages/productos.html" class="boton boton--detalles">Detalles</a>
+            </div>
+            </article>
+
+            <article class="about__icons">
+                <img src="/images/monitores2.jpg" alt="Producto 1" class="producto__imagen">
+            <h3 class="producto__titulo">Producto 2</h3>
+            <p class="producto__descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit felis ut velit ultrices, eget fermentum velit efficitur.</p>
+            <p class="producto__precio">$29.99</p>
+            <div class="botones">
+              <button class="boton boton--carrito">Añadir al carrito</button>
+              <a href="pages/productos.html" class="boton boton--detalles">Detalles</a>
+            </div>
+            </article>
+
+            <article class="about__icons">
+                <img src="/images/pci.jpg" alt="Producto 1" class="producto__imagen">
+            <h3 class="producto__titulo">Producto 3</h3>
+            <p class="producto__descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit felis ut velit ultrices, eget fermentum velit efficitur.</p>
+            <p class="producto__precio">$39.99</p>
+            <div class="botones">
+              <button class="boton boton--carrito">Añadir al carrito</button>
+              <a href="pages/productos.html" class="boton boton--detalles">Detalles</a>
+            </div>
+            </article>
+        </div>
+        <div class="about__main">
+            <article class="about__icons">
+                <img src="/images/procesadorAMD.jpg" alt="Producto 1" class="producto__imagen">
+            <h3 class="producto__titulo">Producto 6</h3>
+            <p class="producto__descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit felis ut velit ultrices, eget fermentum velit efficitur.</p>
+            <p class="producto__precio">$69.99</p>
+            <div class="botones">
+              <button class="boton boton--carrito">Añadir al carrito</button>
+              <a href="pages/productos.html" class="boton boton--detalles">Detalles</a>
+            </div>
+            </article>
+
+            <article class="about__icons">
+                <img src="/images/cpu.jpg" alt="Producto 1" class="producto__imagen">
+            <h3 class="producto__titulo">Producto 5</h3>
+            <p class="producto__descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit felis ut velit ultrices, eget fermentum velit efficitur.</p>
+            <p class="producto__precio">$59.99</p>
+            <div class="botones">
+              <button class="boton boton--carrito">Añadir al carrito</button>
+              <a href="pages/productos.html" class="boton boton--detalles">Detalles</a>
+            </div>
+            </article>
+
+            <article class="about__icons">
+                <img src="/images/procesadorAMD.jpg" alt="Producto 1" class="producto__imagen">
+            <h3 class="producto__titulo">Producto 6</h3>
+            <p class="producto__descripcion">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit felis ut velit ultrices, eget fermentum velit efficitur.</p>
+            <p class="producto__precio">$69.99</p>
+            <div class="botones">
+              <button class="boton boton--carrito">Añadir al carrito</button>
+              <a href="pages/productos.html" class="boton boton--detalles">Detalles</a>
+            </div>
+            </article>
+        </div>
+    </section>
+
+      <section class="contacto" id="contactUs">
+        <div class="container">
+          <div class="contacto__info">
+            <h2 class="contacto__titulo">¡Contáctanos!</h2>
+            <br>
+            <br>
+            <p>Por favor indicanos tu consulta, pregunta o comentarios en el siguiente formulario</p>
+            <br>
+            <br>
+            <p>Dirección: Cra. 72j #37G - 06, Kennedy, Bogotá, Cundinamarca</p>
+            <p>Correo electrónico: info@bizcomputers.com</p>
+            <p>Número de teléfono: 313 4284982</p>
+          </div>
+          <form class="contacto__form">
+            <div class="contacto__form-column">
+              <input type="text" placeholder="Nombre" required>
+              <input type="email" placeholder="Correo electrónico" required>
+            </div>
+            <div class="contacto__form-column">
+              <textarea placeholder="Mensaje" required></textarea>
+              <button type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+    <section class="testimony">
+        <h2 class="blogs" id="blogs">Blogs</h2>
+        <div class="testimony__container container">
+            <img src="./images/leftarrow.svg" class="testimony__arrow" id="before">
+            
+            <section class="testimony__body testimony__body--show" data-id="1">
+                <div class="testimony__texts">
+                    <h2 class="subtitle">Conoce el poder que entrega la <span class="testimony__course">nueva generación de procesadores</span></h2>
+                    <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
+                        esse, asperiores eaque totam nulla repudiandae quasi, deserunt culpa exercitationem
+                        blanditiis laborum veniam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
+                </div>
+
+                <figure class="testimony__picture">
+                    <img src="./images/procesador.jpg" class="testimony__img">
+                </figure>
+            </section>
+
+            <section class="testimony__body" data-id="2">
+                <div class="testimony__texts">
+                    <h2 class="subtitle">Mayor capidad en RAM<span class="testimony__course">mayor fluides durante tus proyectos</span></h2>
+                    <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
+                        esse, asperiores eaque laborum veniam laboriosam saepe reiciendis dolorem. Cum, ratione
+                        voluptatum!</p>
+                </div>
+
+                <figure class="testimony__picture">
+                    <img src="./images/ram-424813_640.jpg" class="testimony__img">
+                </figure>
+            </section>
+
+            <section class="testimony__body" data-id="3">
+                <div class="testimony__texts">
+                    <h2 class="subtitle">Conoce los equipos que requieres<span class="testimony__course">para emprender en tu negocio</span></h2>
+                    <p class="testimony__review">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut est
+                        esse, niam laboriosam saepe reiciendis dolorem. Cum, ratione voluptatum!</p>
+                </div>
+
+                <figure class="testimony__picture">
+                    <img src="./images/entrepreneur-2326419_640.jpg" class="testimony__img">
+                </figure>
+            </section>
+
+
+            <img src="./images/rigtharrow.svg" class="testimony__arrow" id="next">
+        </div>
+    </section>
+
+    <section class="questions container" id="aboutUS">
+        <section class="questions__offer">
+            <h2 class="subtitle">Acerca de Nosotros</h2>
+            <p class="questions__copy">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Amet ratione
+                architecto magnam, officiis ex porro vero est voluptates quaerat quibusdam illo veniam reprehenderit
+                eius atque tempora iure ab non autem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit, beatae, cumque, eos praesentium sit non sed rerum numquam nostrum aperiam necessitatibus dolor deserunt temporibus fuga dignissimos corporis excepturi doloremque odit?</p>
+                
+        </section>
+        
+        <section class="container about">
+        <div class="about__main">
+            <article class="about__icons">
+                <figure class="testimony__picture">
+                    <img src="./images/procesador.jpg" class="testimony__img">
+                </figure>
+                <h3 class="about__title">Última tecnologia</h3>
+                <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
+                    porro eius facilis?</p>
+            </article>
+
+            <article class="about__icons">
+                <figure class="testimony__picture">
+                    <img src="./images/p4.jpg" class="testimony__img">
+                </figure>
+                <h3 class="about__title">Productos estrella</h3>
+                <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
+                    porro eius facilis?</p>
+            </article>
+
+            <article class="about__icons">
+                <figure class="testimony__picture">
+                    <img src="./images/testimonio.png" class="testimony__img">
+                </figure>
+                <h3 class="about__title">Casos de éxito</h3>
+                <p class="about__paragrah">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae tempore
+                    porro eius facilis?</p>
+            </article>
+        </div>
+        </section>
+
+
+        <h2 class="subtitle">Preguntas frecuentes</h2>
+        <p class="questions__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, porro
+            doloribus neque perspiciatis sapiente fuga. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatibus, incidunt. Nostrum, reiciendis veritatis alias explicabo rerum natus porro rem quia cum totam culpa repellat esse error labore ipsum est tenetur.</p>
+        
+        <section class="questions__container">
+            <article class="questions__padding">
+                <div class="questions__answer">
+                    <h3 class="questions__title">¿Qué servicios y productos te podemos ofrecer?
+                        <span class="questions__arrow">
+                            <img src="./images/arrow.svg" class="questions__img">
+                        </span>
+                    </h3>
+
+                    <p class="questions__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                        facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
+                        eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
+                        amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
+                        nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
+                        quam atque?</p>
+                </div>
+            </article>
+
+            <article class="questions__padding">
+                <div class="questions__answer">
+                    <h3 class="questions__title">¿Por que confiar en nosotros y nuestros equipos?
+                        <span class="questions__arrow">
+                            <img src="./images/arrow.svg" class="questions__img">
+                        </span>
+                    </h3>
+
+                    <p class="questions__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                        facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
+                        eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
+                        amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
+                        nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
+                        quam atque?</p>
+                </div>
+            </article>
+
+            <article class="questions__padding">
+                <div class="questions__answer">
+                    <h3 class="questions__title">Duración de nuestras garantias
+                        <span class="questions__arrow">
+                            <img src="./images/arrow.svg" class="questions__img">
+                        </span>
+                    </h3>
+
+                    <p class="questions__show">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos
+                        facere, quidem eum id excepturi assumenda explicabo nam accusamus veritatis voluptates
+                        eveniet adipisci, dicta nihil nemo modi possimus officiis quam atque? Lorem ipsum, dolor sit
+                        amet consectetur adipisicing elit. Quos facere, quidem eum id excepturi assumenda explicabo
+                        nam accusamus veritatis voluptates eveniet adipisci, dicta nihil nemo modi possimus officiis
+                        quam atque?</p>
+                </div>
+            </article>
+        </section>
+
+
+    </section>
+
+    
+</main>
+<footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__row">
+            <img src="./images/LogoBizComputers.png" alt="" class="logo">
+        </div>
+        <div class="footer__row">
+            <ul class="nav__link nav__link--footer">
+                <li class="nav__items">
+                    <a href="/index.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="pages/productos.html" class="nav__links">Productos</a>
+                </li>
+                <li class="nav__items">
+                    <a href="pages/shoppinCart.html" class="nav__links">Carrito de Compras</a>
+                </li>
+                <li class="nav__items">
+                    <a href="pages/userDataRegistration.html" class="nav__links">Perfil Usuario</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#blogs" class="nav__links">Blog</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#aboutUS" class="nav__links">Acerca de Nosotros</a>
+                </li>
+                <li class="nav__items">
+                    <a href="#contactUs" class="nav__links">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <section class="footer__copy container">
+        
+            <div class="footer__social">
+                <a href="https://twitter.com/bizcomputers?lang=es" class="footer__icons"><img src="./images/twitter.svg" class="footer__img"></a>
+                <a href="https://www.instagram.com/bizcomputers/" class="footer__icons"><img src="./images/instagram.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="./images/facebook.svg" class="footer__img"></a>
+            </div>
+            
+        </section>
+        <div class="footer__row">
+            <a href="#" class="nav__links">Políticas de privacidad y términos de servicio</a>
+        </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="./src/js/filter.js"></script>
-    <script>
-      $(document).ready(function () {
-        filterHotels(); // Filtrar hoteles cuando se carga la página
-      });
-    </script>
-  </body>
+    
+</footer>
+<script src="./js/mainslider.js"></script>
+<script src="./js/slider.js"></script>
+<script src="./js/question.js"></script>
+<script src="./js/menu.js"></script>
+</body>
 </html>
