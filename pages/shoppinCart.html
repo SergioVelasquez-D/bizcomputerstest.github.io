@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Biz Computers - Tu tienda de tecnologia</title>
+<link rel="shortcut icon" href="../images/IconoBizComputers.png" type="image/x-icon">
+<link rel="stylesheet" href="../css/normalize.css">
+<link rel="stylesheet" href="../css/estilos.css">
+
+<meta name="theme-color" content="#2091F9">
+
+<!-- Primary Meta Tags -->
+<title>>Biz Computers</title>
+<meta name="title" content=">Biz Computers" />
+<meta name="description" content="Tu tienda de tecnologia" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://SergioVelasquez-D.github.io" />
+<meta property="og:title" content="Tu tienda de tecnologia" />
+<meta property="og:description" content="Tu tienda de tecnologia" />
+<meta property="og:image" content="https://SergioVelasquez-D.github.io/images/Icon1.png" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://SergioVelasquez-D.github.io" />
+<meta property="twitter:title" content="Tu tienda de tecnologia" />
+<meta property="twitter:description" content="Tu tienda de tecnologia" />
+<meta property="twitter:image" content="https://SergioVelasquez-D.github.io/images/Icon1.png" />
+
+</head>
+<body>
+<header class = "hero2">
+    <nav class="nav container">
+        
+        <div class="nav__logo">
+            <img src="../images/LogoBizComputers.png" alt="" class="logo">
+            
+        </div>
+        <ul class = "nav__link nav__link--menu">
+            
+            <li class="nav__items">
+                <a href="/index.html" class="nav__links">Inicio</a>
+            </li>
+            <li class="nav__items">
+                <a href="productos.html" class="nav__links">Productos</a>
+            </li>
+            <li class="nav__items">
+                <a href="../pages/shoppinCart.html" class="nav__links">Carrito de Compras</a>
+            </li>
+            <li class="nav__items">
+                <a href="../pages/userDataRegistration.html" class="nav__links">Perfil Usuario</a>
+            </li>
+            <li class="nav__items">
+                <a href="/index.html#blogs" class="nav__links">Blog</a>
+            </li>
+            <li class="nav__items">
+                <a href="/index.html#aboutUS" class="nav__links">Acerca de Nosotros</a>
+            </li>
+            <li class="nav__items">
+                <a href="/index.html#contactUs" class="nav__links">Contacto</a>
+            </li>
+            <img src="../images/close.svg" alt="" class="nav__close">
+
+        </ul>
+        <div class="nav__menu">
+            <img src="../images/menu.svg" alt="" class="nav__img">
+        </div>
+    </nav>
+
+    
+</header>
+<main class="contenedor-main">
+    <section class="productos">
+        <h2>Seleccione su producto</h2>
+        <select id="lista-productos">
+          <option value="producto1">Producto 1 - $10</option>
+          <option value="producto2">Producto 2 - $15</option>
+          <option value="producto3">Producto 3 - $20</option>
+          <!-- Agrega más opciones según sea necesario -->
+        </select>
+      </section>
+  
+      <section class="productos-seleccionados">
+        <h2>Productos Seleccionados</h2>
+        <div id="productos-seleccionados">
+          <!-- <div class="cantidad-producto">
+            <button class="btn-disminuir">-</button>
+            <input type="number" class="input-cantidad" value="1">
+            <button class="btn-incrementar">+</button>
+          </div>
+          <button class="borrar-producto">X</button>*/-->
+        </div>
+      </section>
+  
+      <section class="pasarela-pagos">
+        <h2>Seleccione su método de pago</h2>
+        <select id="lista-pagos">
+          <option value="paypal">PayPal</option>
+          <option value="mastercard">MasterCard</option>
+          <option value="nequi">Nequi</option>
+          <!-- Agrega más opciones según sea necesario -->
+        </select>
+        <form id="formulario-pago" class="oculto">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" required>
+          
+          <label for="cedula">Cédula</label>
+          <input type="text" id="cedula" required>
+  
+          <label for="metodo-pago">Método de Pago</label>
+          <input type="text" id="metodo-pago" required>
+  
+          <label for="celular">Celular</label>
+          <input type="text" id="celular" required>
+  
+          <label for="email">Correo Electrónico</label>
+          <input type="email" id="email" required>
+  
+          <button type="submit">Pagar</button>
+        </form>
+      </section>
+
+</main>
+
+
+
+<footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__row">
+            <img src="./images/LogoBizComputers.png" alt="" class="logo">
+        </div>
+        <div class="footer__row">
+            <ul class="nav__link nav__link--footer">
+                <li class="nav__items">
+                    <a href="/index.html" class="nav__links">Inicio</a>
+                </li>
+                <li class="nav__items">
+                    <a href="productos.html" class="nav__links">Productos</a>
+                </li>
+                <li class="nav__items">
+                    <a href="../pages/shoppinCart.html" class="nav__links">Carrito de Compras</a>
+                </li>
+                <li class="nav__items">
+                    <a href="../pages/userDataRegistration.html" class="nav__links">Perfil Usuario</a>
+                </li>
+                <li class="nav__items">
+                    <a href="/index.html#blogs" class="nav__links">Blog</a>
+                </li>
+                <li class="nav__items">
+                    <a href="/index.html#aboutUS" class="nav__links">Acerca de Nosotros</a>
+                </li>
+                <li class="nav__items">
+                    <a href="/index.html#contactUs" class="nav__links">Contacto</a>
+                </li>
+            </ul>
+        </div>
+        <section class="footer__copy container">
+        
+            <div class="footer__social">
+                <a href="https://twitter.com/bizcomputers?lang=es" class="footer__icons"><img src="../images/twitter.svg" class="footer__img"></a>
+                <a href="https://www.instagram.com/bizcomputers/" class="footer__icons"><img src="../images/instagram.svg" class="footer__img"></a>
+                <a href="#" class="footer__icons"><img src="../images/facebook.svg" class="footer__img"></a>
+            </div>
+            
+        </section>
+        <div class="footer__row">
+            <a href="#" class="nav__links">Políticas de privacidad y términos de servicio</a>
+        </div>
+    </div>
+
+    
+</footer>
+<script src="../js/shoppingCart.js"></script>
+<script src="../js/slider.js"></script>
+<script src="../js/question.js"></script>
+<script src="../js/menu.js"></script>
+</body>
+</html>
